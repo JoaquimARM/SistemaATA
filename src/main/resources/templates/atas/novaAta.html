@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Nova Ata</title>
+</head>
+<body>
+    <h1>Emitir Nova Ata</h1>
+    <form th:action="@{/atas}" th:object="${ata}" method="post">
+        <label>Título:</label>
+        <input type="text" th:field="*{titulo}" /><br/>
+        
+        <label>Data de Emissão:</label>
+        <input type="datetime-local" th:field="*{dataEmissao}" /><br/>
+        
+        <label>Início:</label>
+        <input type="datetime-local" th:field="*{inicio}" /><br/>
+        
+        <label>Término:</label>
+        <input type="datetime-local" th:field="*{termino}" /><br/>
+        
+        <label>Pauta:</label>
+        <textarea th:field="*{pauta}"></textarea><br/>
+        
+        <label>Descrição:</label>
+        <textarea th:field="*{descricao}"></textarea><br/>
+        
+        <label>Palavras-chave:</label>
+        <input type="text" th:field="*{palavrasChave}" /><br/>
+        
+        <label>Tipo:</label>
+        <select th:field="*{tipo}">
+            <option value="publica">Pública</option>
+            <option value="privada">Privada</option>
+        </select><br/>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

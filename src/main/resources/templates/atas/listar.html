@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Atas de Reunião</title>
+</head>
+<body>
+    <h1>Atas</h1>
+    <table border="1">
+        <tr>
+            <th>Título</th>
+            <th>Data de Emissão</th>
+        </tr>
+        <tr th:each="ata : ${atas}">
+            <td th:text="${ata.titulo}"></td>
+            <td th:text="${#dates.format(ata.dataEmissao, 'dd/MM/yyyy HH:mm')}"></td>
+        </tr>
+    </table>
+</body>
+</html>
