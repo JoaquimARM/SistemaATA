@@ -1,12 +1,12 @@
-package service;
+package Sistema.Ata.Sistema.Ata.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import model.Ata;
-import repository.AtaRepository;
+import Sistema.Ata.Sistema.Ata.model.Ata;
+import Sistema.Ata.Sistema.Ata.repository.AtaRepository;
 
 @Service
 public class AtaService {

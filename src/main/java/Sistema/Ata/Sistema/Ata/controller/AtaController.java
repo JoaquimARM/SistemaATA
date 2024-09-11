@@ -1,4 +1,4 @@
-package controller;
+package Sistema.Ata.Sistema.Ata.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import model.Ata;
-import service.AtaService;
+import Sistema.Ata.Sistema.Ata.model.Ata;
+import Sistema.Ata.Sistema.Ata.service.AtaService;
 
 @Controller
 @RequestMapping("/atas")
@@ -35,3 +35,4 @@ public class AtaController {
         return "redirect:/atas";
     }
 }
+

@@ -1,4 +1,4 @@
-package model;
+package Sistema.Ata.Sistema.Ata.model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
